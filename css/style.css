@@ -1,0 +1,879 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 7000px;
+}
+
+.nav-parent{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/italian-cuisine-2378729.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.nav-content{
+    width: 100%;
+    height:60px;
+    overflow: auto;
+    background-color: rgba(145, 103, 80, 0.7);
+    position:fixed;
+    top: 0;
+    z-index: 5;
+
+}
+
+.nav-parent .logo{
+    width: 60px;
+    height: 60px;
+    border: 0;
+    border-radius: 50%;
+    margin-left: 40px;
+    float: left;
+}
+.order-item{
+    width: 300px;
+    height: 30px;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-top: 15px;
+    padding: 2px 0 0 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.nav-content-li{
+    float: right;
+ 
+}
+.nav-content-li li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 15px;
+    position: relative;
+    
+}
+.nav-content-li li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+.nav-content-li li .b-home::after{
+    position: absolute;
+    content: "";
+    width: 0;
+   
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(247, 16, 16);
+    opacity: 0;
+}
+.nav-content-li li .b-home:hover::after{
+    width: 100%;
+    height: 2px;
+    opacity: 0.5;
+    transition: 1s;
+}
+.a-home::after{
+    background-color: rgb(243, 16, 16);
+    width: 100%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    opacity: 0.5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.logo-name{
+    display: inline;
+    font-family: fantasy;
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.home-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(145, 103, 80, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content{
+    width: 60%;
+    /* background-color: brown; */
+    height: 120px;
+    text-transform: capitalize;
+    position: absolute;
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content .btn{
+
+    width: 150px;
+    padding: 16px 0px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+.content .btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.btn-home2{
+    background-color: rgb(192, 88, 19);
+    color: white;
+    margin-left: 10px;
+}
+.home-p1{
+    margin:10px 0;
+}
+
+.h2-welcome{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.welcome-bar{
+    width: 300px;
+    height: 5px;
+    margin: auto;
+    background-color: red;
+    margin-top: 20px;
+}
+.three-divs{
+    overflow: auto;
+}
+.three-divs div{
+    width: 350px;
+    height: 250px;
+    background-color: rgba(88, 14, 14, 0.299);
+    float: left;
+    margin-left: 8%;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    border: 0;
+    border-radius: 20px;
+
+}
+.three-divs div i{
+    font-size: 50px;
+    padding: 40px 0px 20px 0px;
+}
+.three-divs div p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.three-divs div a{
+    color:black ;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+.three-divs div:hover a{
+    color: white;
+}
+.three-divs div::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: red;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    z-index: -1;
+    border: 0;
+    border-radius: 20px;
+
+}
+.three-divs div::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    z-index: -1;
+    border: 0;
+    border-radius: 20px;
+
+}
+.three-divs div:hover::after{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+
+    
+}
+.three-divs div:hover::before{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+
+    
+}
+.three-divs div:hover h2{
+    color: white;
+}
+
+.feature-work{
+    margin-top: 150px;
+    width: 100%;
+    height: 900px;
+    background-color: rgba(195, 187, 187, 0.625);
+    overflow: auto;
+}
+.feature-work .title-h2{
+    padding: 20px 0px 0px 600px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+.feature-work .title p {
+    width: 300px;
+    height: 2px;
+    margin-left: 600px;
+    background-color: red;
+    margin-top: 10px;
+}
+.feature-work .feature-one{
+    width: 400px;
+    height: 350px;
+    background-color: red;
+    float: left;
+    margin-left: 80px;
+    margin-top: 20px;
+    border: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+}
+.feature-work .feature-one img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(85, 54, 54, 0.7);
+    z-index: 5;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay p {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    padding: 50px 0px 30px 0px;
+}
+.overlay span{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 120px;
+    display: block;
+    margin-bottom: 10px;
+
+}
+.feature-one:hover .overlay{
+    visibility: visible;
+    transition: 1s;
+    opacity: 1;
+
+}
+.overlay  .motor {
+    margin-left: 150px;
+    margin-right: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.overlay a{
+    
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+font-weight: 800;
+}
+.overlay a i {
+    line-height: 40px;
+
+}
+
+
+.six-divs{
+    overflow: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.six-divs .small-div{
+    float: left;
+    margin-left: 5%;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(88, 14, 14, 0.299);
+    margin-top: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+}
+.six-divs .small-div::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(243, 16, 16 );
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+.six-divs .small-div:hover::after{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.six-divs .small-div i{
+    font-size: 40px;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: black;
+}
+.six-divs .head h2 {
+    text-align: center;
+    margin: 50px 0px;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.six-divs .head p {
+    width: 200px;
+    height: 5px;
+margin: auto;
+    background-color: red;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.six-divs .small-div h2{
+    display: inline;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.six-divs .small-div p{
+    text-align: center;
+    margin-top: 30px;
+}
+.six-divs .small-div:hover p , .six-divs .small-div:hover h2{
+    color: white;
+    transition: 1s;
+
+}
+.why-choose-us{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 50px;
+}
+.why-choose-us .title h2{
+    margin-top: 250px;
+    margin-left: 150px;
+    font-size: 40px;
+}
+.why-choose-us .title p{
+    width: 200px;
+    height: 2px;
+    margin-top: 10px;
+    margin-left: 180px;
+    background-color: red;
+    margin-bottom: 20px;
+  
+}
+.why-choose-us span {
+    padding-left: 180px;
+    font-size: 20px;
+    
+}
+.why-choose-us span p{
+    padding-left: 180px;
+    font-size: 20px;
+}
+
+.why-choose-us .photo img{
+    width:400px ;
+    height: 400px;
+    border: 0;
+    border-radius: 50px;
+    margin-left: 1000px;
+    display: inline-block;
+
+}
+.why-choose-us .photo ul{
+margin-top:-250px;
+}
+
+.why-choose-us .photo ul li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgba(88, 14, 14, 0.299);
+    margin: 10px 5px;
+    border-radius: 50%;
+    margin-left: 1250px;
+    
+}
+.why-choose-us .photo ul .active{
+    background-color: red;
+
+}
+.why-choose-us .photo ul li:hover{
+    background-color: red;
+}
+.why-choose-us ul{
+    margin-left: 190px;
+    margin-top: -180px;
+}
+.why-choose-us ul li{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.first-background{
+    width: 100%;
+    height:300px;
+    background-image: url(../images/italian-cuisine-2378729.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: auto;
+
+}
+
+.icon{
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.icon i{
+    font-size: 50px;
+    padding-left: 150px;
+    padding-top: 80px;
+    color: rgba(121, 15, 15, 0.968);
+    
+}
+.icon p{
+    font-size: 30px;
+    padding-left: 80px;
+    padding-top: 10px;
+    color: rgb(88, 14, 14);
+
+}
+.icon h2{
+    font-size: 30px;
+    padding-left: 155px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: rgba(88, 14, 14, 0.948);
+}
+.menu-table{
+    width: 100%;
+    overflow: auto;
+}
+
+.menu-table .title h2{
+    margin: 120px  660px ;
+    font-size: 40px;
+}
+.menu-table .title .title-p {
+    width: 150px;
+    height: 5px;
+    margin: auto;
+    margin-top: -80px;
+    background-color: red;
+    
+}
+.menu-table .three-table{
+    width: 350px;
+    height: 400px;
+    background-color: rgba(158, 51, 51, 0.26);
+    float: left;
+    border: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 8%;
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 150px;
+}
+.menu-table .three-table .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+background-color: rgba(255, 0, 0, 0.099);
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.menu-table .three-table .circle p{
+    padding: 25px;
+    font-size: 30px;
+}
+.menu-table .three-table .content{
+    margin-top: 20px;
+}
+.menu-table .three-table .content button{
+    margin-top: 80px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(202, 44, 44);
+}
+.menu-table .three-table::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    top:0;
+    left: 0;
+    height: 0;
+    background-color: rgba(255, 0, 0, 0.726);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    z-index: -1;
+}
+.menu-table .three-table:hover::after{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.menu-table .three-table:hover button {
+    background-color: rgb(156, 133, 133);
+    transition: 1s;
+
+}
+.menu-table .three-table:hover .circle{
+    background-color: rgb(224, 38, 38);
+    transition: 1s;
+}
+.seconed-background{
+    width: 100%;
+    height:300px;
+    background-image: url(../images/italian-cuisine-2378729.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: auto;
+    margin-bottom: 150px;
+
+
+}
+.gemy_background{
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 30px;
+    float: left;
+}
+.background img{
+    width: 80px;
+    height: 80px;
+    border: 0;
+    border-radius: 50%;
+    margin-top: 20px;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+}
+.background h2{
+    font-size: 50px;
+}
+.background span{
+    font-size: 30px;
+    color: white;
+}
+.background{
+    
+    padding: 90px 20px 10px 150px;
+    position: relative;
+    line-height: 1.4;
+    margin-bottom: 20px;
+
+}
+.gemy_background p{
+    margin-left: 150px;
+    margin-top: -30px;
+    font-size: 20px;
+}
+
+.our-team{
+    width:80%;
+    overflow: auto;
+    margin: auto;
+}
+.three-team{
+    margin-top: 100px;
+    float: left;
+    width:30% ;
+    height: 300px;
+    background-color: rgba(158, 51, 51, 0.26);
+    margin-left: 20px;
+    border: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0px 14px ;
+
+}
+.our-team h2{
+
+padding-left: 40%;
+text-transform: capitalize;
+font-size: 40px;
+}
+.our-team p{
+    width: 250px;
+    height: 2px;
+    border: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: red;
+    margin-left: 37%;
+    margin-top: 5px;
+    position: relative;
+}
+.three-team{
+    position: relative;
+}
+.three-team .img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+
+}
+.three-team h2{
+    font-size: 20px;
+    padding-top:20px;
+    padding-left: 80px;
+}
+.three-team .img img{
+    width: 100%;
+    
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+    z-index: 5;
+    
+}
+.three-team:hover .team-overlay{
+    visibility: visible;
+    opacity: 1;
+
+}
+.team-overlay a{
+    color: white;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(188, 50, 50);
+    margin-left: auto;
+
+}
+.team-overlay a i{
+    line-height: 40px;
+    padding-left: 15px;
+   
+}
+.three-team::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+   left: 0;
+   top: 0;
+   border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+    background-color: rgb(0, 0, 0 );
+    opacity: 0;
+    visibility: hidden;
+}
+
+.three-team:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    visibility: visible;
+    transition: 1s;
+}
+
+.three-team:hover.three-team h2{
+    color: white;
+    transition: 1s;
+
+}
+.last_news{
+    width: 100%;
+    overflow: auto;
+    margin-top: 150px;
+}
+.three_news {
+    width: 25%;
+    height: 600px;
+    background-color: rgba(88, 14, 14, 0.299);
+    float: left;
+    margin-left: 7%;
+    border: 0;
+    border-radius: 60px;
+    position: relative;
+}
+.three_news::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top:0;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.475);
+    border: 0;
+    border-radius: 60px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.three_news:hover::after{
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.last_news .head_news{
+    padding: 20px 0 5px 670px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.last_news .news_bar{
+    margin: -5px auto 50px auto;
+    width: 190px;
+    height: 2px;
+    border: 0;
+    background-color: red;
+
+}
+.contact{
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgba(145, 103, 80, 0.7);
+    height: 350px;
+}
+.contact i {
+    color: white;
+    font-size: 50px;
+    margin-left: 2px;
+}
+.contact i:hover{
+    color:  rgba(167, 107, 75, 0.962);
+}
+.contact .icon_contant {
+   padding: 10px 0 0 590px;
+}
+.footer{
+    text-align: center;
+    padding-top: 5px;
+}
+.imag_contact img{
+    margin: 15px 0 0 610px;
+}
+.news_icon i{
+    display: inline;
+}
+.news_icon{
+    margin-top: 50px;
+    margin-left: 5px;
+    font-size: 18px;
+    color: rgb(123, 120, 120);
+}
+.three_news:hover .news_icon{
+    color: rgb(85, 5, 5);
+    transition: 1s;
+}
+.imag_news img{
+    width:300;
+    height:200;
+    border: 0;
+    border-radius: 20px;
+}
+.imag_news{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.content_news{
+    margin-top: 20px;
+}
+.content_news h2{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.content_news .p_content_news {
+    font-size: 20px;
+    padding-left: 5px;
+    padding-bottom: 50px;
+}
+.content_news a{
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 120px;
+  
+}
+.three_news:hover .content_news a{
+    text-decoration: underline;
+    color: white;
+    transition: 1s;
+}
